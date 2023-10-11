@@ -1,7 +1,6 @@
 # ntCPPpred: A Non-Toxic Cell-Penetrating Peptide Prediction Tool
 
 Description:
-
 `ntCPPpred` is a cutting-edge computational tool developed for predicting non-toxic cell-penetrating peptides (CPPs). With the rising importance of peptide and protein-based drugs in therapeutic fields, ensuring the non-toxicity of CPPs is pivotal. Our tool integrates advanced machine learning methodologies, employing a composite classifier to ensure the highest accuracy in predictions.
 
 Features:
@@ -15,7 +14,3 @@ Applications:
 - Drug Development: Ideal for researchers in the drug development sector, enabling them to identify and employ non-toxic CPPs for drug delivery.
 - Bioinformatics & Computational Biology: An excellent tool for those looking to expand on cell-penetrating peptide research or integrate it into larger prediction frameworks.
 - Academic Research: For educators and students, `ntCPPpred` offers a hands-on experience in understanding the nuances of CPP prediction and its importance in modern therapeutics.
-
-Future Directions:
-We are committed to the continuous refinement of `ntCPPpred`, with plans to include more datasets and refine our algorithms based on user feedback and evolving research. We also aim to foster a collaborative community around `ntCPPpred` and encourage contributions from experts worldwide.
-
