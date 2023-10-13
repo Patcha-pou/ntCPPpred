@@ -1,84 +1,36 @@
-#### **ntCPPpred: A Non-Toxic Cell-Penetrating Peptide Prediction Tool**
+# ntCPPpred: A Non-Toxic Cell-Penetrating Peptide Prediction Tool
 
----
+Cell-penetrating peptides (CPPs) have carved out a significant niche in the realm of drug delivery and therapeutics. Their role as efficient drug delivery vehicles is promising, but it's vital to ensure their non-toxicity for therapeutic applications. Safe and effective use is of utmost priority.
 
-**Brief Description:**
+With this backdrop, ntCPPpred emerges as a pioneering computational tool, harnessing the power of Weka's machine learning capabilities. This tool seamlessly integrates state-of-the-art machine learning algorithms, providing both researchers and developers a reliable and accurate prediction mechanism. The primary objective? To assist in certifying the non-toxicity of CPPs, ensuring they are fit and ready for therapeutic integrations.
 
-`ntCPPpred` is an innovative computational tool designed to predict non-toxic cell-penetrating peptides (CPPs). Integrating state-of-the-art machine learning algorithms, it provides researchers and developers an accurate method to ensure the non-toxicity of CPPs in therapeutic applications.
 
----
+## Features
 
-**System Requirements:**
+- **Rapid Prediction**: Quickly train models on datasets and retrieve results.
+  
+- **Advanced Attribute Handling**: Perform attribute selection or removal to streamline your datasets.
 
-- **Operating System:** Linux, Windows, or macOS.
-- **Memory:** Minimum 4GB RAM recommended.
-- **Processor:** Intel i3 or equivalent.
-- **Software:** Python 3.x, pip (Python package manager).
+- **Variety of Classifiers**: Train using different classifiers including RandomForest, Logistic, and MultilayerPerceptron.
 
----
+- **User-Friendly Interface**: Through the Weka GUI, users can easily modify and adapt configurations.
 
-**Installation Instructions:**
+## Prerequisites
 
-1. **Clone the Repository:**
+- Java
+- Weka 
+
+## How to Use
+
+1. Install WEKA
+
     ```bash
-    git clone https://github.com/ntCPPpred/ntCPPpred.git
+    git clone https://github.com/Waikato/weka-3.8.git
+    cd weka-3.8
     ```
 
-2. **Navigate to the Directory:**
-    ```bash
-    cd ntCPPpred
-    ```
+2. Download and Execute the script:
 
-3. **Install the Required Libraries:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
----
-
-**How to Use the Tool:**
-
-1. **Command Line Interface:**
-
-    To predict non-toxic CPPs from a peptide sequence file:
-    ```bash
-    python ntCPPpred.py -i <input_file.fasta>
-    ```
-
-    For detailed help and options:
-    ```bash
-    python ntCPPpred.py -h
-    ```
-
-2. **Using the GUI (if available):**
-
-    Launch the GUI:
-    ```bash
-    python ntCPPpred_gui.py
-    ```
-    - Load your input peptide sequences.
-    - Click on "Predict".
-    - View the results in the output section.
-
----
-
-**Example Inputs and Outputs:**
-
-- **Input (input_file.fasta):**
-    ```fasta
-    >Sample1
-    GFLIRPKVLSW
-    >Sample2
-    ACDEFGRHIKL
-    ```
-
-- **Command:**
-    ```bash
-    python ntCPPpred.py -i input_file.fasta
-    ```
-
-- **Output:**
-    ```text
-    Sample1: Non-Toxic CPP
-    Sample2: Toxic CPP
-    ```
+```bash
+./test_models.sh
+```
